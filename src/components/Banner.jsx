@@ -5,7 +5,7 @@ import hero from "../assets/hero.png";
 
 const Banner = () => {
   return (
-    <section>
+    <section className="max-w-4xl mx-auto">
       <div className="hero">
         <div className="hero-content text-center">
           <div className="max-w-md">

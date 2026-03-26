@@ -2,7 +2,7 @@ import React from "react";
 
 const States = () => {
   return (
-    <section>
+    <section className="max-w-4xl mx-auto">
       <div className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-10">
         <h1 className="text-white text-center text-2xl font-semibold mb-3">
           Trusted by Millions, Built for You
