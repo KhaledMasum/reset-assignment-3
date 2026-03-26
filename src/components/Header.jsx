@@ -1,8 +1,25 @@
 import React from "react";
+import Logo from "../assets/optimizely_symbol_full-color.svg";
+import { Link, NavLink } from "react-router";
+import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
+  const links = (
+    <>
+      <NavLink to="/">
+        <li>Home</li>
+      </NavLink>
+      <NavLink to="/apps">
+        <li>Apps</li>
+      </NavLink>
+      <NavLink to="/installation">
+        <li>Installation</li>
+      </NavLink>
+    </>
+  );
+
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm px-12">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,54 +41,29 @@ const Header = () => {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-4"
           >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link to="/" className="flex items-center">
+          <img className="h-10 w-10" src={Logo} alt="" />
+          <h3 className="text-xl font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+            Optimizely
+          </h3>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2 bg-base-100 w-40 z-1">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+        <ul className="menu menu-horizontal px-1 gap-4">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a
+          href="https://github.com/KhaledMasum"
+          className="btn btn-sm text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
+        >
+          <FaGithub className="me-1" />
+          Contribute
+        </a>
       </div>
     </div>
   );
