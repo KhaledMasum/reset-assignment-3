@@ -2,8 +2,8 @@ import React from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
 import { Link } from "react-router";
 
-const TrendingApp = ({ trendingApp }) => {
-  const { id, image, title, downloads, ratingAvg } = trendingApp;
+const TrendingApp = ({ allApp }) => {
+  const { id, image, title, downloads, ratingAvg } = allApp;
   return (
     <Link to={`/app-details/${id}`}>
       <div className="card bg-base-100 shadow-sm p-3">

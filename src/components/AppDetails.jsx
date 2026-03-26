@@ -1,51 +1,96 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillLike } from "react-icons/ai";
 import { FaDownload, FaStar } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router";
+import { toast } from "react-toastify";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const AppDetails = () => {
   const allApps = useLoaderData();
   const appCard = useParams();
   const appId = parseInt(appCard.id);
   const selectedApp = allApps.find((allApp) => allApp.id === appId);
+  const {
+    image,
+    title,
+    companyName,
+    downloads,
+    ratingAvg,
+    reviews,
+    ratings,
+    description,
+  } = selectedApp;
 
-  console.log(selectedApp);
+  const [install, setInstall] = useState(false);
+
+  const handleAppInstall = () => {
+    setInstall(true);
+    toast.success("App Installed Successfully!");
+  };
 
   return (
-    <div className="card lg:card-side bg-base-100 shadow-sm max-w-4xl mx-auto my-10">
-      <figure className="w-1/4">
-        <img src={selectedApp.image} alt="" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{selectedApp.title}</h2>
-        <h6>
-          Developed By:
-          <span className="text-[#632EE3]">{selectedApp.companyName}</span>
-        </h6>
-        <hr className="border-t border-gray-400 my-2" />
-        <div className="flex grow gap-5">
-          <div>
-            <FaDownload className="text-[#00D390] text-2xl mb-1" />
-            <small className="text-xs">Downloads</small>
-            <h3 className="text-2xl font-bold">{selectedApp.downloads}M</h3>
+    <div className="max-w-4xl mx-auto my-10">
+      <div className="card lg:card-side bg-base-100 shadow-sm mb-10">
+        <figure className="w-1/4">
+          <img src={image} alt="" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">{title}</h2>
+          <h6>
+            Developed By:
+            <span className="text-[#632EE3]">{companyName}</span>
+          </h6>
+          <hr className="border-t border-gray-400 my-2" />
+          <div className="flex grow gap-5">
+            <div>
+              <FaDownload className="text-[#00D390] text-2xl mb-1" />
+              <small className="text-xs">Downloads</small>
+              <h3 className="text-2xl font-bold">{downloads}M</h3>
+            </div>
+            <div>
+              <FaStar className="text-[#FF8811] text-2xl mb-1" />
+              <small className="text-xs">Average Rating</small>
+              <h3 className="text-2xl font-bold">{ratingAvg}</h3>
+            </div>
+            <div>
+              <AiFillLike className="text-[#632EE3] text-2xl mb-1" />
+              <small className="text-xs">Total Reviews</small>
+              <h3 className="text-2xl font-bold">{reviews}K</h3>
+            </div>
           </div>
-          <div>
-            <FaStar className="text-[#FF8811] text-2xl mb-1" />
-            <small className="text-xs">Average Rating</small>
-            <h3 className="text-2xl font-bold">{selectedApp.ratingAvg}</h3>
+          <div className="card-actions">
+            <button
+              className={`btn btn-sm text-white ${install ? "bg-[#6dd3b3]" : "bg-[#00D390]"}`}
+              onClick={() => handleAppInstall()}
+              disabled={install}
+            >
+              {!install ? `Install Now (${selectedApp.size}MB)` : `Installed`}
+            </button>
           </div>
-          <div>
-            <AiFillLike className="text-[#632EE3] text-2xl mb-1" />
-            <small className="text-xs">Total Reviews</small>
-            <h3 className="text-2xl font-bold">{selectedApp.downloads}K</h3>
-          </div>
-        </div>
-        <div className="card-actions">
-          <button className=" btn btn-sm text-white bg-[#00D390]">
-            Install Now ({selectedApp.size}MB)
-          </button>
         </div>
       </div>
+
+      <h3 className="text-xl font-semibold mb-2">Ratings</h3>
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart data={[...ratings].reverse()} layout="vertical">
+          <YAxis dataKey="name" type="category" stroke="gray" />
+          <XAxis type="number" stroke="gray" />
+          <Tooltip />
+          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+          <Bar dataKey="count" fill="orange" barSize={30} />
+        </BarChart>
+      </ResponsiveContainer>
+
+      <h3 className="text-xl font-semibold mb-2 mt-6">Description</h3>
+      <p>{description}</p>
     </div>
   );
 };

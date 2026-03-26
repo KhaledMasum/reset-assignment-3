@@ -5,13 +5,13 @@ import TrendingApps from "../components/TrendingApps";
 import { useLoaderData } from "react-router";
 
 const Home = () => {
-  const trendingApps = useLoaderData();
+  const allApps = useLoaderData();
 
   return (
     <div>
       <Banner></Banner>
       <States></States>
-      <TrendingApps trendingApps={trendingApps}></TrendingApps>
+      <TrendingApps allApps={allApps}></TrendingApps>
     </div>
   );
 };
