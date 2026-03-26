@@ -1,0 +1,530 @@
+[
+  {
+    "image": "https://placehold.co/80x80/4F46E5/ffffff?text=NS",
+    "title": "Nova Sketch",
+    "companyName": "Pixelcraft Studios",
+    "id": 1,
+    "description": "A powerful vector drawing and illustration tool with smart shapes, layering, and cloud sync. Perfect for designers on the go.",
+    "size": 87,
+    "reviews": 14230,
+    "ratingAvg": 4.6,
+    "downloads": 980000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 312
+      },
+      {
+        "name": "2 star",
+        "count": 489
+      },
+      {
+        "name": "3 star",
+        "count": 1102
+      },
+      {
+        "name": "4 star",
+        "count": 3874
+      },
+      {
+        "name": "5 star",
+        "count": 8453
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/0EA5E9/ffffff?text=FT",
+    "title": "FlowTask",
+    "companyName": "Orbit Labs Inc.",
+    "id": 2,
+    "description": "Smart task manager with Kanban boards, habit tracking, and AI-powered priority suggestions to keep your day on track.",
+    "size": 42,
+    "reviews": 9870,
+    "ratingAvg": 4.4,
+    "downloads": 620000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 198
+      },
+      {
+        "name": "2 star",
+        "count": 367
+      },
+      {
+        "name": "3 star",
+        "count": 920
+      },
+      {
+        "name": "4 star",
+        "count": 2840
+      },
+      {
+        "name": "5 star",
+        "count": 5545
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/10B981/ffffff?text=PM",
+    "title": "PocketMed",
+    "companyName": "HealthBridge Co.",
+    "id": 3,
+    "description": "Track medications, set reminders, and log symptoms. Integrates with wearable devices and shares reports with your doctor.",
+    "size": 55,
+    "reviews": 22100,
+    "ratingAvg": 4.7,
+    "downloads": 1400000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 420
+      },
+      {
+        "name": "2 star",
+        "count": 530
+      },
+      {
+        "name": "3 star",
+        "count": 1200
+      },
+      {
+        "name": "4 star",
+        "count": 5600
+      },
+      {
+        "name": "5 star",
+        "count": 14350
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/F59E0B/ffffff?text=BZ",
+    "title": "BuzzCast",
+    "companyName": "SoundWave Media",
+    "id": 4,
+    "description": "Podcast app with smart playlists, speed controls, offline downloads, and personalized show recommendations.",
+    "size": 63,
+    "reviews": 31500,
+    "ratingAvg": 4.5,
+    "downloads": 2100000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 610
+      },
+      {
+        "name": "2 star",
+        "count": 850
+      },
+      {
+        "name": "3 star",
+        "count": 2200
+      },
+      {
+        "name": "4 star",
+        "count": 9400
+      },
+      {
+        "name": "5 star",
+        "count": 18440
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/EF4444/ffffff?text=RD",
+    "title": "RapidDiet",
+    "companyName": "NutriSync Technologies",
+    "id": 5,
+    "description": "Calorie counter, macro tracker, and meal planner with a database of over 2 million foods and barcode scanning support.",
+    "size": 74,
+    "reviews": 18700,
+    "ratingAvg": 4.3,
+    "downloads": 870000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 560
+      },
+      {
+        "name": "2 star",
+        "count": 780
+      },
+      {
+        "name": "3 star",
+        "count": 2100
+      },
+      {
+        "name": "4 star",
+        "count": 5200
+      },
+      {
+        "name": "5 star",
+        "count": 10060
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/8B5CF6/ffffff?text=LN",
+    "title": "LinguaNow",
+    "companyName": "Verbatim AI",
+    "id": 6,
+    "description": "Learn 40+ languages through immersive stories, voice recognition exercises, and live tutoring sessions with native speakers.",
+    "size": 120,
+    "reviews": 45600,
+    "ratingAvg": 4.8,
+    "downloads": 3500000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 520
+      },
+      {
+        "name": "2 star",
+        "count": 780
+      },
+      {
+        "name": "3 star",
+        "count": 2100
+      },
+      {
+        "name": "4 star",
+        "count": 11200
+      },
+      {
+        "name": "5 star",
+        "count": 31000
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/06B6D4/ffffff?text=WL",
+    "title": "WalletLens",
+    "companyName": "Finex Group",
+    "id": 7,
+    "description": "Personal finance tracker that auto-categorizes transactions, sets spending limits, and provides monthly financial health scores.",
+    "size": 38,
+    "reviews": 7800,
+    "ratingAvg": 4.2,
+    "downloads": 430000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 310
+      },
+      {
+        "name": "2 star",
+        "count": 450
+      },
+      {
+        "name": "3 star",
+        "count": 1100
+      },
+      {
+        "name": "4 star",
+        "count": 2200
+      },
+      {
+        "name": "5 star",
+        "count": 3740
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/EC4899/ffffff?text=CF",
+    "title": "CloudFit",
+    "companyName": "ActiveEdge Corp.",
+    "id": 8,
+    "description": "Home workout app with 500+ guided sessions, real-time form correction via camera, and adaptive weekly training plans.",
+    "size": 98,
+    "reviews": 27300,
+    "ratingAvg": 4.6,
+    "downloads": 1750000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 480
+      },
+      {
+        "name": "2 star",
+        "count": 720
+      },
+      {
+        "name": "3 star",
+        "count": 2100
+      },
+      {
+        "name": "4 star",
+        "count": 7200
+      },
+      {
+        "name": "5 star",
+        "count": 16800
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/64748B/ffffff?text=SP",
+    "title": "Snaply PDF",
+    "companyName": "DocTech Solutions",
+    "id": 9,
+    "description": "All-in-one PDF editor for scanning, annotating, signing, and compressing documents with OCR text recognition support.",
+    "size": 67,
+    "reviews": 12400,
+    "ratingAvg": 4.1,
+    "downloads": 540000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 560
+      },
+      {
+        "name": "2 star",
+        "count": 790
+      },
+      {
+        "name": "3 star",
+        "count": 1800
+      },
+      {
+        "name": "4 star",
+        "count": 3700
+      },
+      {
+        "name": "5 star",
+        "count": 5550
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/F97316/ffffff?text=SR",
+    "title": "StarRoute",
+    "companyName": "NavCore Systems",
+    "id": 10,
+    "description": "Offline-capable GPS navigation with real-time traffic, speed camera alerts, and voice-guided routes in 80+ countries.",
+    "size": 145,
+    "reviews": 52000,
+    "ratingAvg": 4.7,
+    "downloads": 4800000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 720
+      },
+      {
+        "name": "2 star",
+        "count": 960
+      },
+      {
+        "name": "3 star",
+        "count": 3100
+      },
+      {
+        "name": "4 star",
+        "count": 14200
+      },
+      {
+        "name": "5 star",
+        "count": 33020
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/22C55E/ffffff?text=GT",
+    "title": "GreenThumb",
+    "companyName": "PlantIQ Labs",
+    "id": 11,
+    "description": "Plant care companion with species identification, watering schedules, sunlight tracking, and pest diagnosis via photo scan.",
+    "size": 51,
+    "reviews": 8900,
+    "ratingAvg": 4.5,
+    "downloads": 390000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 145
+      },
+      {
+        "name": "2 star",
+        "count": 278
+      },
+      {
+        "name": "3 star",
+        "count": 890
+      },
+      {
+        "name": "4 star",
+        "count": 2600
+      },
+      {
+        "name": "5 star",
+        "count": 4987
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/7C3AED/ffffff?text=MV",
+    "title": "MovieVault",
+    "companyName": "CineStream Inc.",
+    "id": 12,
+    "description": "Track movies and TV shows you've watched, discover new titles using mood-based filters, and sync watchlists with friends.",
+    "size": 33,
+    "reviews": 19800,
+    "ratingAvg": 4.4,
+    "downloads": 1100000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 340
+      },
+      {
+        "name": "2 star",
+        "count": 510
+      },
+      {
+        "name": "3 star",
+        "count": 2200
+      },
+      {
+        "name": "4 star",
+        "count": 6100
+      },
+      {
+        "name": "5 star",
+        "count": 10650
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/0284C7/ffffff?text=CL",
+    "title": "CloudLearn",
+    "companyName": "EduPath Global",
+    "id": 13,
+    "description": "Online learning platform with 10,000+ courses across coding, design, and business. Includes live Q&A and certificates.",
+    "size": 82,
+    "reviews": 33100,
+    "ratingAvg": 4.6,
+    "downloads": 2600000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 510
+      },
+      {
+        "name": "2 star",
+        "count": 720
+      },
+      {
+        "name": "3 star",
+        "count": 2800
+      },
+      {
+        "name": "4 star",
+        "count": 9200
+      },
+      {
+        "name": "5 star",
+        "count": 19870
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/BE185D/ffffff?text=SC",
+    "title": "SleepCycle",
+    "companyName": "RestWell Technologies",
+    "id": 14,
+    "description": "Sleep tracker that analyzes sleep stages, wakes you at the optimal moment, and gives personalized tips to improve rest quality.",
+    "size": 46,
+    "reviews": 41200,
+    "ratingAvg": 4.8,
+    "downloads": 3900000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 480
+      },
+      {
+        "name": "2 star",
+        "count": 620
+      },
+      {
+        "name": "3 star",
+        "count": 1900
+      },
+      {
+        "name": "4 star",
+        "count": 10200
+      },
+      {
+        "name": "5 star",
+        "count": 28000
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/047857/ffffff?text=RM",
+    "title": "RecipeMate",
+    "companyName": "Culinary AI Ltd.",
+    "id": 15,
+    "description": "Cook smarter with 50,000+ recipes, ingredient substitution suggestions, grocery list generation, and step-by-step cooking mode.",
+    "size": 59,
+    "reviews": 16500,
+    "ratingAvg": 4.5,
+    "downloads": 820000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 290
+      },
+      {
+        "name": "2 star",
+        "count": 430
+      },
+      {
+        "name": "3 star",
+        "count": 1500
+      },
+      {
+        "name": "4 star",
+        "count": 4800
+      },
+      {
+        "name": "5 star",
+        "count": 9480
+      }
+    ]
+  },
+  {
+    "image": "https://placehold.co/80x80/B45309/ffffff?text=FX",
+    "title": "FocusBox",
+    "companyName": "Mindflow Studio",
+    "id": 16,
+    "description": "Distraction blocker and Pomodoro timer with focus music, session analytics, and website/app blocking on a schedule.",
+    "size": 28,
+    "reviews": 6400,
+    "ratingAvg": 4.3,
+    "downloads": 310000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 180
+      },
+      {
+        "name": "2 star",
+        "count": 260
+      },
+      {
+        "name": "3 star",
+        "count": 720
+      },
+      {
+        "name": "4 star",
+        "count": 1840
+      },
+      {
+        "name": "5 star",
+        "count": 3400
+      }
+    ]
+  }
+]
