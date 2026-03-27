@@ -3,8 +3,10 @@ import { FaDownload, FaStar } from "react-icons/fa";
 import { Link } from "react-router";
 
 const TrendingApp = ({ allApp }) => {
+  console.log(allApp);
+
   const { id, image, title, downloads, ratingAvg } = allApp;
-  return (
+  return allApp ? (
     <Link to={`/app-details/${id}`}>
       <div className="card bg-base-100 shadow-sm p-3">
         <figure>
@@ -26,6 +28,8 @@ const TrendingApp = ({ allApp }) => {
         </div>
       </div>
     </Link>
+  ) : (
+    <h1>No app found</h1>
   );
 };
 

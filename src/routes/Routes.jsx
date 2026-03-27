@@ -5,22 +5,23 @@ import Home from "../pages/Home";
 import Apps from "../pages/Apps";
 import Installation from "../pages/Installation";
 import AppDetails from "../components/AppDetails";
+import ErrorPage from "../components/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    errorElement: <h1>404 Not found</h1>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
         path: "/",
-        loader: () => fetch("appData.json"),
+        loader: () => fetch("/appData.json"),
         Component: Home,
       },
       {
         path: "/apps",
-        loader: () => fetch("appData.json"),
+        loader: () => fetch("/appData.json"),
         Component: Apps,
       },
       {
@@ -29,7 +30,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/app-details/:id",
-        loader: () => fetch("appData.json"),
+        loader: () => fetch("/appData.json"),
         Component: AppDetails,
       },
     ],
