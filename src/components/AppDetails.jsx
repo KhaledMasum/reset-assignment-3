@@ -37,19 +37,19 @@ const AppDetails = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto my-10">
-      <div className="card lg:card-side bg-base-100 shadow-sm mb-10">
-        <figure className="w-1/4">
-          <img src={image} alt="" />
+    <div className="max-w-4xl m-4 md:mx-auto md:mt-10">
+      <div className="card lg:card-side bg-base-100 md:rounded-none mb-4 shadow-md md:shadow-none md:mb-6">
+        <figure className="md:w-1/4">
+          <img className="w-full" src={image} alt="" />
         </figure>
-        <div className="card-body">
+        <div className="card-body p-4">
           <h2 className="card-title">{title}</h2>
           <h6>
             Developed By:
             <span className="text-[#632EE3]">{companyName}</span>
           </h6>
           <hr className="border-t border-gray-400 my-2" />
-          <div className="flex grow gap-5">
+          <div className="flex grow gap-5 justify-between md:justify-start">
             <div>
               <FaDownload className="text-[#00D390] text-2xl mb-1" />
               <small className="text-xs">Downloads</small>
@@ -68,7 +68,7 @@ const AppDetails = () => {
           </div>
           <div className="card-actions">
             <button
-              className={`btn btn-sm text-white ${install ? "bg-[#6dd3b3]" : "bg-[#00D390]"}`}
+              className={`btn btn-sm w-full md:w-auto text-white ${install ? "bg-[#6dd3b3]" : "bg-[#00D390]"}`}
               onClick={() => handleAppInstall()}
               disabled={install}
             >
@@ -77,6 +77,8 @@ const AppDetails = () => {
           </div>
         </div>
       </div>
+
+      <hr className="border-t border-gray-400 my-2" />
 
       <h3 className="text-xl font-semibold mb-2">Ratings</h3>
       <ResponsiveContainer width="100%" height={300}>
@@ -89,7 +91,9 @@ const AppDetails = () => {
         </BarChart>
       </ResponsiveContainer>
 
-      <h3 className="text-xl font-semibold mb-2 mt-6">Description</h3>
+      <hr className="border-t border-gray-400 my-2" />
+
+      <h3 className="text-xl font-semibold mb-2">Description</h3>
       <p>{description}</p>
     </div>
   );

@@ -18,7 +18,6 @@ const Banner = () => {
               repeat. Then scale it all with AI and see what your team is
               capable of.
             </p>
-            {/* <button className="btn btn-primary">Get Started</button> */}
             <div className="flex gap-3 justify-center">
               <a href="https://play.google.com/store/apps?pli=1">
                 <img src={playStore} className="h-12" alt="" />
@@ -31,7 +30,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <img src={hero} className="max-w-md mx-auto" alt="" />
+      <img src={hero} className="max-w-sm md:max-w-md mx-auto" alt="" />
     </section>
   );
 };

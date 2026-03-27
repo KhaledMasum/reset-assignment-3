@@ -7,7 +7,7 @@ const States = () => {
         <h1 className="text-white text-center text-2xl font-semibold mb-3">
           Trusted by Millions, Built for You
         </h1>
-        <div className="grid grid-cols-3 gap-4 text-white text-center">
+        <div className="grid md:grid-cols-3 gap-4 text-white text-center">
           <div>
             <p>
               <small className="text-xs">Total Downloads</small>

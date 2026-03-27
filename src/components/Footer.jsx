@@ -4,7 +4,7 @@ import Logo from "../assets/optimizely_symbol_full-color.svg";
 const Footer = () => {
   return (
     <div>
-      <footer className="grid md:grid-cols-6 footer sm:footer-horizontal bg-neutral text-neutral-content p-12">
+      <footer className="grid md:grid-cols-6 footer sm:footer-horizontal bg-neutral text-neutral-content p-4 md:p-12">
         <aside className="md:col-span-2">
           <img className="h-10 w-10" src={Logo} alt="" />
           <h2 className="text-2xl font-semibold">Global HQ</h2>

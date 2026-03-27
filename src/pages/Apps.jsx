@@ -16,7 +16,7 @@ const Apps = () => {
   };
 
   return (
-    <div className="p-10">
+    <div className="p-4 md:p-10">
       <h1 className="text-center text-2xl font-semibold mb-2">
         Our All Applications
       </h1>
@@ -27,7 +27,7 @@ const Apps = () => {
         <h3 className="text-xl font-semibold">
           ({filteredApps.length}) Apps Found
         </h3>
-        <label className="input input-sm">
+        <label className="input input-sm w-40 md:w-xs">
           <FaSearch />
           <input
             type="search"
@@ -39,7 +39,7 @@ const Apps = () => {
         </label>
       </div>
       {filteredApps.length > 0 ? (
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {filteredApps.map((allApp) => (
             <TrendingApp allApp={allApp} key={allApp.id}></TrendingApp>
           ))}
